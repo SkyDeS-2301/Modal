@@ -20,14 +20,47 @@ body {
 }
 
 .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
 
+    background: rgba(0, 0, 0, 0.75);
+    padding-top: 150px;
 }
 
 .modal__inner {
+    position: relative;
+    padding: 25px;
+
+    text-align: center;
+    border: 2px solid black;
+
+    width: 600px;
+    margin: 0 auto;
 }
 
 .modal__title {
+    font-size: 26px;
+    font-weight: 700;
 }
 
 .modal__content {
+    font-size: 20px;
+}
+
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    color: black;
+    font-size: 32px;
 }
